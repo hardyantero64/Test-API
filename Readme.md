@@ -1,7 +1,7 @@
 //Api using Symfony and Swagger//
 //Instruction also available from https://digitalfortress.tech/tutorial/rest-api-with-symfony-and-api-platform//
 
-$ composer create-project symfony/website-skeleton api
+$ composer create-project symfony/skeleton api
 
 $ composer require symfony/maker-bundle --dev         // enable entity maker//
 
