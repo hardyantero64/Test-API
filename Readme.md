@@ -1,9 +1,9 @@
 //Api using Symfony and Swagger//
 //Instruction also available from https://digitalfortress.tech/tutorial/rest-api-with-symfony-and-api-platform//
 
-$ composer create-project symfony/website-skeleton simple
+$ composer create-project symfony/website-skeleton api
 
-$ require symfony/maker-bundle --dev         // enable entity maker//
+$ composer require symfony/maker-bundle --dev         // enable entity maker//
 
 $ composer require doctrine/annotations
 
@@ -21,7 +21,7 @@ DATABASE_URL="mysql://root:password@127.0.0.1:3306/name_of_your_new_database"
 
 //To create: //
 
-$symfony console doctrine:database:create
+$ php bin/console doctrine:database:create
 
 // Database should be created after this command. If drivers not found, check that php.ini files are updated with drivers//
 
@@ -40,3 +40,6 @@ $ php bin/console doctrine:schema:update --force   //To execute the SQL query//
 
 
 //Test api Response body on your Api using "Post" function as visible at //Instruction also available from https://digitalfortress.tech/tutorial/rest-api-with-symfony-and-api-platform//
+
+
+
